@@ -3,3 +3,27 @@
     margin-left: 25px;
 }
 
+.width75center {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.marginTop10 {
+    margin-top: 10%;
+}
+
+.verticalSpanner20 {
+    padding: 0px 20px;
+}
+
+.horizontalSpanner20 {
+    margin: 20px 0px;
+}
+
+.tableHover:hover {
+    cursor: pointer;
+    background-color: #8b8b8b5b;
+    border-radius: 4px;
+    width: auto;
+    height: 100%;
+}
