@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto-Seite</title>
+
+    <link rel="icon" type="image/png" href="src/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="grey">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <!-- <li><a href="#">Sass</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">JavaScript</a></li> -->
+            <li><a href="#" class="black-text">
+              <i class="material-icons left">brightness_1</i> 
+              Materialize CSS</a>
+            </li>
+            <li><a href="#" class="blue-text">
+              <i class="material-icons left">brightness_1</i> 
+              Geeklabs</a>
+            </li>
+            <li><a href="#" class="red-text">
+              <i class="material-icons left">brightness_1</i> 
+              Moodle</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="spanner"></div>
+
+    <table class="table80 striped highlight grey centered">
+      <thead>
+        <tr>
+          <th data-field="id">ID</th>
+          <th data-field="name">Name</th>
+          <th data-field="kraftstoff">Kraftstoff</th>
+          <th data-field="farbe">Farbe</th>
+          <th data-field="bauart">Bauart</th>
+          <th data-field="tank">Tank</th>
+          <th data-field="action"><i class="material-icons">add_circle</i></th>
+        </tr>
+      </thead>
+      <tbody> 
+        <tr>
+          <td>1</td>
+          <td>Passlat</td>
+          <td>Diesel</td>
+          <td><i class="material-icons left bgColor-000000 Color-000000">crop_square</i>#000000</td>
+          <td>Limousine</td>
+          <td>0</td>
+          <td>
+            <i class="material-icons blue-text">directions_car</i>
+            <i class="material-icons green-text">edit</i>
+            <i class="material-icons red-text">delete_forever</i>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Opel</td>
+          <td>Benzin</td>
+          <td><i class="material-icons left bgColor-008888 Color-008888">crop_square</i>#008888</td>          <td>SUV</td>
+          <td>0</td>
+          <td>
+            <i class="material-icons blue-text">directions_car</i>
+            <i class="material-icons green-text">edit</i>
+            <i class="material-icons red-text">delete_forever</i>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>VW</td>
+          <td>Elektro</td>
+          <td><i class="material-icons left bgColor-006666 Color-006666">crop_square</i>#006666</td>          <td>Pickup</td>
+          <td>0</td>
+          <td>
+            <i class="material-icons blue-text">directions_car</i>
+            <i class="material-icons green-text">edit</i>
+            <i class="material-icons red-text">delete_forever</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

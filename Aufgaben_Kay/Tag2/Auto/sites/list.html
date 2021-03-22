@@ -1,0 +1,25 @@
+<!-- Mustache Template -->
+<script id="row-template" type="x-tmpl-mustache">
+    <!-- Start Mustache Template -->
+    {{#data}}
+    {{#.}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>Elektro</td>
+        <td class="color-col">
+            <div class="color" style="background-color: #000000;">
+            </div>
+            <p style="color: #000000;">#000000</p>
+        </td>
+        <td>Limousine</td>
+        <td>0</td>
+        <td data-id="3">
+            <span class="material-icons blue-text mode-tanken">directions_car</span>
+            <span class="material-icons green-text mode-edit">mode_edit</span>
+            <span class="material-icons red-text mode-delete">delete</span>
+        </td>
+    </tr>
+    {{/.}}
+    {{/data}}
+</script>

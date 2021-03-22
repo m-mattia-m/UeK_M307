@@ -1,0 +1,51 @@
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h4 id="modal-title"></h4>
+        <div class="modal-main">
+            <div class="row">
+                <div class="input-field col s12 m6 l6">
+                    <input id="field-id" type="number" class="validate" value="0" disabled>
+                    <label for="field-id">ID</label>
+                </div>
+                <div class="input-field col s12 m6 l6">
+                    <input id="field-name" type="text" class="validate" data-length="255" required>
+                    <label for="field-name">App Name *</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6 l6">
+                    <input type="text" class="datepicker" id="field-date" required>
+                    <label for="field-date">Kaufdatum *</label>
+                </div>
+                <div class="input-field col s12 m6 l6">
+                    <input id="field-preis" type="number" class="validate" step="0.5"> <!--was age-->
+                    <label for="field-preis">Kaufpreis</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6 l6">
+                    <select id="field-kategorie" required>
+                            <option value="Work" selected>Work</option>
+                            <option value="Games">Games</option>
+                            <option value="Social">Social</option>
+                        </select>
+                    <label for="field-kategorie">Kategorie</label>
+                </div>
+                <div class="input-field col s12 m6 l6">
+                    <input id="field-rating" type="range" class="validate" min="0" max="5" step="0.25">
+                    <label for="field-rating" class="label-margin">Rating</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6 l6">
+                    <input id="field-stat" type="number" class="validate" min="0" max="1">
+                    <label for="field-stat" class="label-margin">Status</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="modal-close waves-effect waves-red btn-flat" id="modal-close"><i class="material-icons left">delete_sweep</i> Discard</button>
+        <button class="waves-effect btn-flat" id="modal-save"><i class="material-icons left">save</i> Save</button>
+    </div>
+</div>

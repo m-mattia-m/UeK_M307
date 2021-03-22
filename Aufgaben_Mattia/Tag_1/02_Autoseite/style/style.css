@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.circle {
+    border-radius: 100%;
+    float: left;
+    margin: 0px 15px;
+}
+
+.medium {
+    height: 25px !important;
+    width: 25px !important;
+}
+
+.fontSizeMedium {
+    font-size: 24px;
+}
+
+.rectangle {
+    height: 15px;
+    width: 30px;
+}
+
+.bgColor-000000 {
+    background-color: #000000;
+}
+.bgColor-008888 {
+    background-color: #008888;
+}
+.bgColor-006666 {
+    background-color: #006666;
+}
+
+.Color-000000 {
+    color: #000000;
+}
+.Color-008888 {
+    color: #008888;
+}
+.Color-006666 {
+    color: #006666;
+}
+
+.side {
+    display: flex;
+    float: left;
+}
+
+.table80 {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.spanner {
+    padding: 20px 0 20px;
+}

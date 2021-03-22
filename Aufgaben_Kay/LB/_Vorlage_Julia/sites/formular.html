@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="css/formular.css">
+
+<div id="formular">
+    <div class="topmargin row">
+        <div id="zwingend" class="input-field col s6">
+            <input required name="firma" placeholder="Firma" id="firma" type="text" class="validate">
+            <label for="textfield">Firma*</label>
+        </div>
+        <div class="input-field col s6">
+            <input required name="email" placeholder="Email" id="email" type="text" class="validate">
+            <label for="textfield">Email*</label>
+        </div>
+        <div class="input-field col s6">
+            <select name="kategorie" id="kategorie">
+              <option value="Privat">Privat</option>
+              <option value="Medien">Medien</option>
+              <option value="Verkehr">Verkehr</option>
+            </select>
+            <label>Kategorie</label>
+        </div>
+        <div class="input-field col s6">
+            <select required name="rechnung" id="rechnung">
+              <option value="Nein">Nein</option>
+              <option value="Ja">Ja</option>
+            </select>
+            <label>Rechnung*</label>
+        </div>
+        <div class="input-field col s6">
+            <input name="kontaktperson" required placeholder="Kontaktperson" id="kontaktperson" type="text" class="validate">
+            <label for="textfield">Kontaktperson*</label>
+        </div>
+        <input id="id" name="id" type="text" value="0" hidden>
+        <p class="col s12">* = zwingend</p>
+    </div>
+</div>

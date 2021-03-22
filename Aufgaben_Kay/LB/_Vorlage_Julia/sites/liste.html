@@ -1,0 +1,56 @@
+<a id="addauto" class="waves-effect waves-light modal-trigger right" href="#modal1">
+    <i class="large material-icons red-text right">add_circle</i>
+</a>
+
+<table class="blue lighten-3 striped">
+    <thead class="indigo lighten-1 black-text">
+        <tr>
+            <th hidden>id</th>
+            <th>Firma</th>
+            <th>Email</th>
+            <th>Kategorie</th>
+            <th>Rechnung </th>
+            <th>Kontaktperson </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody></tbody>
+</table>
+
+<script id="template" type="x-tmpl-mustache">
+    {{#data}} {{#.}}
+    <tr>
+        <td hidden>{{kunde_id}}</td>
+        <td>{{kunde_firma}}</td>
+        <td>{{kunde_email}}</td>
+        <td>{{kunde_kategorie}}</td>
+        <td>{{kunde_rechnung}}</td>
+        <td>{{kunde_kontaktperson}}</td>
+        <td data-id="{{kunde_id}}">
+            <i class="edit material-icons left green-text modal-trigger" href="#modal1">create</i>
+            <i class="delete material-icons left red-text" href="">delete_forever</i>
+        </td>
+    </tr>
+    {{/.}} {{/data}}
+</script>
+
+<!-- Erweiterung -->
+<div>
+    <a id="show-all" class="indigo darken-1 waves-effect waves-light btn">Alle</a>
+    <a id="show-one" class="indigo darken-1 waves-effect waves-light btn">1</a>
+    <a id="show-five" class="indigo darken-1 waves-effect waves-light btn">5</a>
+    <a id="show-ten" class="indigo darken-1 waves-effect waves-light btn">10</a>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4 id="modal_title"></h4>
+        <div id="modal_inhalt"></div>
+    </div>
+    <div class="modal-footer">
+        <div class="modal-close waves-effect waves-green btn-flat red black-text left">Abbrechen</div>
+        <div id="save-input" class="modal-close waves-effect waves-green btn-flat green black-text right">Speichern</div>
+    </div>
+</div>
