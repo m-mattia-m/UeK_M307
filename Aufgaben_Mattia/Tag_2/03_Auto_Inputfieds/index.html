@@ -35,9 +35,7 @@
 
     <!-- Selfmade Script -->
     <script src="js/script.js"></script>
-    <script src="js/modal.js"></script>
-    <!-- <script src="js/table.js"></script>
-    <script src="js/form.js"></script> -->
+
 </head>
 <body>
     <nav class=""> <!-- grey lighten-1 -->
@@ -51,8 +49,140 @@
         </div>
     </nav>
 
-    <data-table></data-table>
-    <data-modal></data-modal>
+    <div class="width75center marginTop10">
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input value="" id="first_name" type="text" class="validate">
+                <label class="active" for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input value="" id="last_name" type="text" class="validate">
+                <label class="active" for="last_name">Last Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s10">
+                <i class="material-icons prefix">streetview</i>
+                <input value="" id="street" type="text" class="validate">
+                <label class="active" for="street">Street</label>
+            </div>
+            <div class="input-field col s2">
+                <input value="" id="streetNumber" type="number" class="validate">
+                <label class="active" for="streetNumber">Street Number</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s2">
+                <i class="material-icons prefix">location_on</i>
+                <input value="" id="plz" type="number" class="validate">
+                <label class="active" for="plz">plz</label>
+            </div>
+            <div class="input-field col s10">
+                <input value="" id="city" type="text" class="validate">
+                <label class="active" for="streetNumber">City</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">date_range</i>
+                <input type="text" class="datepicker">
+                <label class="active" for="date">Date</label>
+            </div>
+        </div>
+        <div class="row">
+            <i class="material-icons prefix">access_time</i>
+            <input type="text" class="timepicker">
+            <label class="active" for="time">Time</label>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">smartphone</i>
+                <input value="" id="mobile" type="tel" class="validate">
+                <label class="active" for="mobile">Mobile</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input value="" id="email" type="email" class="validate">
+                <label class="active" for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">edit</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Textarea</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="Frau">Frau</option>
+                    <option value="Mann">Mann</option>
+                    <option value="Divars">Divärs</option>
+                </select>
+                <label>Materialize Select</label>
+            </div>
+        </div>
+        <div class="row">
+            <form action="#">
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Science-Fiction</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Documentation</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>Romantic</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"/>
+                        <span>Funny</span>
+                    </label>
+                </p>
+            </form>
+        </div>
+        <div class="row">
+            <form action="#">
+                <p class="range-field">
+                    <input type="range" id="test5" min="0" max="100" />
+                </p>
+            </form>
+        </div>
+        <div class="row">
+            <div class="switch">
+                <label>
+                    <input type="checkbox" checked>
+                    <span class="lever"></span>
+                    Newsletter
+                </label>
+            </div>
+        </div>
+        <div class="row">
+                <label>
+                    <input type="checkbox" class="filled-in" checked="checked" />
+                    <span>AGBs</span>
+                </label>
+            </p>
+        </div>
+    </div>
 
     <footer class="page-footer footer-position"> <!--  grey lighten-1 -->
       <div class="footer-copyright">
