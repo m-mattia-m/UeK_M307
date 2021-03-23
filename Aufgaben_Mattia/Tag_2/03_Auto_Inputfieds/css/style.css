@@ -9,7 +9,7 @@ main {
 }
 
 .footer-position {
-    position: fixed;
+    position: none;
     bottom: 0;
     width: 100%;
     padding-top: 0 !important;

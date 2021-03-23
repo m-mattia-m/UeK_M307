@@ -1,16 +1,12 @@
-$(function () {
-    // footer with year
+$(document).ready(function() {
     var date = new Date(); 
     $('#footer-content').html('Copyright © ' + date.getFullYear() + ' Mattia Müggler');
 
-    // load list
-    $('data-table').load("sites/table.html", function () {
-        $.getScript("js/table.js", function () { });
-    });
+    M.textareaAutoResize($('#textarea1'));
 
-    // add item to list
-    // $('.mode-new').click(function (e) {
-    //     e.preventDefault();
-    //     showModal(0);
-    // });
+    $('select').formSelect();
+
+    $('.datepicker').datepicker();
+
+    $('.datepicker').datepicker();
 });
