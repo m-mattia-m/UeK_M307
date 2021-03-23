@@ -1,7 +1,7 @@
 $('.add').click(function () {
     var id = $(this).parent().attr('data-id')
     console.log(id)
-    showModal(id, "Add");
+    showModal(id, "New");
 });
 
 $.ajax({
@@ -29,7 +29,6 @@ $.ajax({
         $('.tank').click(function () {
             var id = $(this).parent().attr('data-id')
             console.log(id)
-            showModal(id, "Tank");
         });
     }
 })
