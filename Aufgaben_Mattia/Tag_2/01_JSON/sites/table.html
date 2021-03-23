@@ -1,0 +1,56 @@
+<table class="marginTop10 width75center light-grey highlight striped centered">
+    <thead class="bgColorDarkGrey colorWhite">
+        <tr>
+            <th data-field="id">ID</th>
+            <th data-field="firstname">Voranme</th>
+            <th data-field="lastname">Nachname</th>
+            <th data-field="birthdate">Geburtsdatum</th>
+            <th data-field="email">Email</th>
+            <th data-field="price"><i class="material-icons tableHover add">add</i></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td  data-id="1">
+                <i class="material-icons tableHover delete">delete</i>
+                <i class="material-icons tableHover edit">edit</i>
+            </td>
+        </tr>
+        <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td  data-id="2">
+                <i class="material-icons tableHover delete">delete</i>
+                <i class="material-icons tableHover edit">edit</i>
+            </td>
+        </tr>
+        <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td  data-id="3">
+                <i class="material-icons tableHover delete">delete</i>
+                <i class="material-icons tableHover edit">edit</i>
+            </td>
+        </tr> -->
+    </tbody>
+</table>
+
+<script id="template" type="x-tmpl-mustache">
+    {{#data}}
+        {{#.}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{vorname}}</td>
+                <td>{{nachname}}</td>
+                <td>{{geburtsdatum}}</td>
+                <td>{{email}}</td>
+                <td data-id='{{id}}'>
+                    <i class="material-icons tableHover delete">delete</i>
+                    <i class="material-icons tableHover edit">edit</i>
+                </td>
+            </tr>
+        {{/.}}
+    {{/data}}
+</script>
