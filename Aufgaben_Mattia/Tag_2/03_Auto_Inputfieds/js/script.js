@@ -8,5 +8,5 @@ $(document).ready(function() {
 
     $('.datepicker').datepicker();
 
-    $('.datepicker').datepicker();
+    $('.timepicker').timepicker();
 });
