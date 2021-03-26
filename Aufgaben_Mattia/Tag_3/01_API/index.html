@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,6 +31,8 @@
                     dataType: "JSON",
                     success: function (response) {
                         console.log('post success');
+                        console.log(response);
+                        showMeldung(response);
                     }
                 });
             });
@@ -43,6 +45,7 @@
                     dataType: "JSON",
                     success: function (response) {
                         console.log("tanken success");
+                        showMeldung(response);
                     }
                 });
             });
@@ -55,20 +58,20 @@
                     dataType: "JSON",
                     success: function (response) {
                         console.log("delete success");
+                        showMeldung(response);
                     }
                 });
             });
 
-            function showMeldungen(response) {
-                // console.log(response['error'])
-                // console.log(response['success'])
-                if(response['success']){
-                    // M.toast(html: response[success], classes: "green")
-                    console.warn(response[success])
-                }
+            function showMeldung(response){
+                // console.log(response['error']);
                 if(response['error']){
-                    // M.toast(html: response[error], classes: "red")
-                    console.error(response[error])
+                    console.error(response['error']);
+                    // M.toast({html: response['error'], classes: "red"});
+                }
+                // console.log(response['success']);
+                if(response['success']){
+                    console.warn(response['success'])
                 }
             }
 
@@ -81,6 +84,8 @@
                     dataType: "JSON",
                     success: function (response) {
                         console.log("getid success");
+                        console.log(response);
+                        showMeldung(response);
                     }
                 });
             });
@@ -92,6 +97,7 @@
                     dataType: "JSON",
                     success: function (response) {
                         console.log("getalle success");
+                        showMeldung(response);
                     }
                 });
             });
