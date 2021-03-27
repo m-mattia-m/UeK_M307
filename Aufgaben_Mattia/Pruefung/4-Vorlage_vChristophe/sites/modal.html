@@ -3,7 +3,7 @@
 </div>
 
 <script id="form-template" type="x-tmpl-mustache">
-{{#data}}
+  {{#data}}
     <div id="modal" class="modal modal-fixed-footer">
       <div class="modal-content">
         <h4 id="modal-title"></h4>
@@ -12,14 +12,14 @@
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">directions_car</i>
-              <input id="name" type="text" class="validate" {{#name}}value="{{name}}">
+              <input id="name" type="text" class="validate" {{#name}}value="{{name}}"{{/name}}>
               <label class="active" for="name">Name</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">local_gas_station</i>
-              <input value="" id="kraftstoff" type="text" class="validate">
+              <input id="kraftstoff" type="text" class="validate" {{#kraftstoff}}value="{{kraftstoff}}"{{/kraftstoff}}>
               <label class="active" for="kraftstoff">Kraftstoff</label>
             </div>
           </div>
@@ -27,23 +27,24 @@
             <div class="input-field col s12">
               <i class="material-icons prefix">color_lens</i>
               <br>
-              <input id="color" type="color" class="validate" {{#farbe}}value="{{farbe}}">
+              <input id="color" type="color" class="validate" {{#farbe}}value="{{farbe}}"{{/farbe}}>
               <label class="active" for="color">Color</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">dehaze</i>
-              <input value="" id="bauart" type="text" class="validate">
+              <input id="bauart" type="text" class="validate" {{#bauart}}value="{{bauart}}"{{/bauart}}>
               <label class="active" for="bauart">Bauart</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">format_color_reset</i>
-              <input value="" id="tank" type="text" class="validate">
+              <input id="tank" type="text" class="validate" {{#tank}}value="{{tank}}"{{/tank}}>
               <label class="active" for="tank">Tank</label>
             </div>
+            <input id="id" name="id" type="hidden" {{#id}}value="{{id}}"{{/id}}>
           </div>
         </div>
       </div>
@@ -52,6 +53,6 @@
         <a href="#!" class="modal-close waves-effect waves-green btn-flat save bgColorLightGreyHover borderDarkGrey"><i class="material-icons">save</i></a>
       </div>
     </div>
-{{/data}}
+  {{/data}}
 
 </script>
