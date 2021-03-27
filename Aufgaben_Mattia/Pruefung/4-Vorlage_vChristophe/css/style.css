@@ -1,0 +1,79 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.medium {
+    height: 25px !important;
+    width: 25px !important;
+}
+
+.fontSizeMedium {
+    font-size: 24px;
+}
+
+.rectangle {
+    height: 15px;
+    width: 30px;
+}
+
+.side {
+    display: block;
+}
+
+.table80 {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+#modalAdd, #tankeAuto, #loescheAuto, #editAuto{
+    padding-top: 1.5%;
+}
+
+#home-icon {
+    font-size: 35px;
+    margin-left: 25px;
+}
+
+.width75center {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.marginTop10 {
+    margin-top: 10%;
+}
+
+.verticalSpanner20 {
+    padding: 0px 20px;
+}
+
+.horizontalSpanner20 {
+    margin: 20px 0px;
+}
+
+.tableHover:hover {
+    cursor: pointer;
+    background-color: #8b8b8b5b;
+    border-radius: 4px;
+    width: auto;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.footer-position {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0 !important;
+}
