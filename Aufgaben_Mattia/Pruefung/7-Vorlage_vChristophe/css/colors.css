@@ -1,0 +1,32 @@
+.bgColorDarkGrey {
+    background-color: #383838;
+}
+
+.bgColorLightGrey {
+    background-color: #D9D9D9;
+}
+
+.bgColorGrey {
+    background-color: #7A7A7A;
+}
+
+.bgColorDarkGreyHover:hover {
+    background-color: #383838;
+}
+
+.bgColorLightGreyHover:hover {
+    background-color: #D9D9D9;
+}
+
+.bgColorGreyHover:hover {
+    background-color: #7A7A7A;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.borderDarkGrey {
+    border: solid 1px #383838;
+    border-radius: 4px;
+}

@@ -1,0 +1,38 @@
+<table class="marginTop10 width75center light-grey highlight striped centered" id="carTable">
+    <thead class="bgColorDarkGrey colorWhite">
+        <tr>
+            <th data-field="id">id</th>
+            <th data-field="name">Name</th>
+            <th data-field="kraftstoff">kraftstoff</th>
+            <th data-field="farbe">farbe</th>
+            <th data-field="bauart">bauart</th>
+            <th data-field="betankungen">Tank</th>
+            <th data-field="price"><i class="material-icons tableHover add">add</i></th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+
+<script id="template" type="x-tmpl-mustache">
+    {{#data}}
+        {{#.}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{kraftstoff}}</td>
+                <td><i class="material-icons left" style='background-color:{{farbe}}; color:{{farbe}};'>crop_square</i>{{farbe}}</td>
+                <td>{{bauart}}</td>
+                <td>{{betankungen}}</td>
+                <td data-id='{{id}}'>
+                    <i class="material-icons tableHover tanken" id="tanken">directions_car</i>
+                    <a href="#modal" class="modal-trigger edit"><i class="material-icons tableHover edit">edit</i></a>
+                    <a href="#delModal" class="modal-trigger delete"><i class="material-icons tableHover deleteModal">delete</i></a>
+                </td>
+            </tr>
+        {{/.}}
+    {{/data}}
+</script>

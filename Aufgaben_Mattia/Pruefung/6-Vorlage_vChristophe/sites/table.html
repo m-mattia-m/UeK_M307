@@ -1,0 +1,65 @@
+<table class="marginTop10 width75center light-grey highlight striped centered tablesorter data-table" id="carTable">
+  <thead class="bgColorDarkGrey colorWhite">
+    <tr>
+      <th data-field="id">ID <i class="material-icons right table-icons">arrow_drop_down</i></th>
+      <th data-field="name">Name <i class="material-icons right table-icons">arrow_drop_down</i></th>
+      <th data-field="kraftstoff">Kraftstoff <i class="material-icons right table-icons">arrow_drop_down</i></th>
+      <th data-field="farbe">Farbe <i class="material-icons right table-icons">arrow_drop_down</i></th>
+      <th data-field="bauart">Baurart <i class="material-icons right table-icons">arrow_drop_down</i></th>
+      <th data-field="betankungen">Tank <i class="material-icons right table-icons">arrow_drop_down</i></th>
+      <th data-field="action"><a class="modal-trigger add" href="#modal"></a><i
+          class="material-icons tableHover add">add</i></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<!-- ab hier -->
+
+<div class="row mt-2">
+    <div class="col s12 m6 l6">
+        <span id="total_reg"></span>
+    </div>
+
+    <div class="col s12 m6 l6 right-align">
+        <p class="me-2 inline">Limit:</p>
+        <button class="waves-effect waves-light btn sort black" data-value="1">1</button>
+        <button class="waves-effect waves-light btn sort black" data-value="5">5</button>
+        <button class="waves-effect waves-light btn sort black" data-value="10">10</button>
+        <button class="waves-effect waves-light btn sort black" data-value="20">20</button>
+        <button class="waves-effect waves-light btn sort black" data-value="0">ALL</button>
+    </div>
+</div>
+
+<div class="row mt-5 s12 m12 l12">
+    <ul class="center pagination pager" id="ul-pagination"></ul>
+</div>
+
+<!-- bis hier -->
+
+<script id="template" type="x-tmpl-mustache">
+  {{#data}}
+    {{#.}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{kraftstoff}}</td>
+        <td><i class="material-icons left" style='background-color:{{farbe}}; color:{{farbe}};'>crop_square</i>{{farbe}}</td>
+        <td>{{bauart}}</td>
+        <td>{{betankungen}}</td>
+        <td data-id={{id}}>
+
+        <!-- <i class="material-icons tableHover tanken blue-text">directions_car</i>
+        <a class="modal-trigger edit" href="#modal"><i class="material-icons tableHover green-text">edit</i></a>
+        <a class="modal-trigger delete" href="#delModal"><i class="material-icons tableHover red-text">delete</i></a> -->
+
+        <i class="material-icons tableHover tanken black-text" id="tanken">directions_car</i>
+        <a href="#modal" class="modal-trigger edit black-text"><i class="material-icons tableHover">edit</i></a>
+        <a href="#delModal" class="modal-trigger delete black-text"><i class="material-icons tableHover">delete</i></a>
+          
+        </td>
+      </tr>
+    {{/.}}
+{{/data}}
+</script>
