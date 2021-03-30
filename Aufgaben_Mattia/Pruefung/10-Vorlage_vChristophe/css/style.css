@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.footer-position {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0 !important;
+    z-index: 200;
+}
+
+#content {
+    background-color: #383838;
+}
+
+#fixedButton {
+    right: 20px;
+    top: 100px;
+    position: fixed;
+    z-index: 100;
+    color: white;
+    background-color: #383838;
+    vertical-align: middle;
+    border-radius: 6px;
+    padding: 12px;
+    padding-bottom: 8px;
+}

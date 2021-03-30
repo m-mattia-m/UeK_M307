@@ -1,0 +1,75 @@
+<div id="content">
+  <a class="modal-trigger add" href="#modal" id="fixedButton"><i class="material-icons tableHover add">add</i></a>
+</div>
+<table class="marginTop10 width75center light-grey highlight striped centered tablesorter data-table" id="carTable">
+    <thead class="bgColorDarkGrey colorWhite">
+      <tr>
+        <th data-field="id">ID</th>
+        <th data-field="name">Name</th>
+        <th data-field="kraftstoff">Kraftstoff</th>
+        <th data-field="farbe">Farbe</th>
+        <th data-field="bauart">Bauart</th>
+        <th data-field="betankungen">Tank</th>
+        <th data-field="action">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+<!-- <div class="row mt-2">
+  <div class="col s12 m6 l6">
+      <span id="total_reg"></span>
+  </div>
+
+  <div class="col s12 m6 l6 right-align">
+      <p class="me-2 inline">Limit:</p>
+      <button class="waves-effect waves-light btn sort black" data-value="1">1</button>
+      <button class="waves-effect waves-light btn sort black" data-value="3">3</button>
+      <button class="waves-effect waves-light btn sort black" data-value="5">5</button>
+      <button class="waves-effect waves-light btn sort black" data-value="10">10</button>
+      <button class="waves-effect waves-light btn sort black" data-value="0">ALL</button>
+  </div>
+</div>
+
+<div class="row mt-5 s12 m12 l12">
+  <ul class="center pagination pager" id="ul-pagination"></ul>
+</div> -->
+
+<script id="template" type="x-tmpl-mustache">
+{{#data}}
+    {{#.}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{kraftstoff}}</td>
+        <td><i class="material-icons left" style='background-color:{{farbe}}; color:{{farbe}};'>crop_square</i>{{farbe}}</td>
+        <td>{{bauart}}</td>
+        <td>{{betankungen}}</td>
+        <td data-id={{id}}>
+
+        <i class="material-icons tableHover tanken blue-text">directions_car</i>
+        <a class="modal-trigger edit" href="#modal"><i class="material-icons tableHover green-text">edit</i></a>
+        <a class="modal-trigger delete" href="#delModal"><i class="material-icons tableHover red-text">delete</i></a>
+          
+        </td>
+      </tr>
+    {{/.}}
+{{/data}}
+
+</script>
+
+<script>
+  // $(document).ready( function () {
+  //     $('#tableCars').DataTable({
+  //       searching : false,
+  //       info : true,
+  //       "paginationType": "full_numbers",
+  //     });
+  //     $('dataTables_length').addClass('bs-select');
+  // } );
+  </script>
+
+
+

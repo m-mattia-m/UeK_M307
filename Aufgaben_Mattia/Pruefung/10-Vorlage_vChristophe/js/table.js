@@ -7,7 +7,18 @@ getData();
 
 $('.modal').modal();
 
-$("table.data-table").tablesorter();
+// var limit = 10;
+
+// $('data-table').data('limit', 10); // set default table limit
+// $('button.sort').click(function (e) {
+//     e.preventDefault();
+//     limit = Number($(this).data('value'));
+//     console.log(limit)
+//     $('data-table').data('limit', limit); // persistent limit even after reload of table
+//     getData(limit);
+// });
+
+// $("table.data-table").tablesorter();
 
 function getData(){
 

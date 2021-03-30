@@ -20,9 +20,9 @@ $(function () {
         var name = $('#name').val();
         var tank = $('#tank').val();
 
-        if(preg_match('/[\'%&<>]/', $tank)){
-            return false;
-        }
+        // if(preg_match('/[\'%&<>]/', $tank)){
+        //     return false;
+        // }
         
         if (tank < 0) {
             send = false;
@@ -50,7 +50,11 @@ $(function () {
                 success: function (response) {
                     console.log('post success');
                     console.log(response);
-                    console.log(data);
+                    console.log($('#name').val());
+                    console.log($('#kraftstoff').val());
+                    console.log($('#color').val());
+                    console.log($('#bauart').val());
+                    console.log($('#tank').val());
                     M.toast({html: modus + " - Saved", classes: 'green white-text'})
                     getData();
                 }
