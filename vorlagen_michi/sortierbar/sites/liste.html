@@ -1,0 +1,57 @@
+<!---
+classes:
+tablesorter = für tablesortierung
+stripped = verschiedene farben
+-->
+<table id="table-to-sort" class="striped tablesorter">
+  <thead class="indigo darken-4 white-text">
+      <tr>
+          <th>Name</th>
+          <th>Kraftstoff</th>
+          <th>Farbe</th>
+          <th>Bauart</th>
+          <th>Tank</th>
+          <th>Datum</th>
+          <th>action</th>
+      </tr>
+  </thead>
+
+  <tbody id="paginate-this" class="indigo lighten-3">
+      
+  </tbody>
+</table>
+
+<!---pagnation-->
+<p class="center" id="total_reg"></p>
+<ul class="center pagination pager" id="myPager"></ul>
+<!-------------->
+
+<script id="myTemplate" type="x-tmpl-mustache">
+  {{#data}}
+      {{#.}}
+          <tr>
+              <td class="clickname">{{name}}</td>
+              <td>{{kraftstoff}}</td>
+              <td><div class="color-prev" style="background-color:{{farbe}};"></div>{{farbe}}</td>
+              <td>{{bauart}}</td>
+              <td>{{betankungen}}</td>
+              <td>{{date}}</td>
+              <td data-id="{{id}}">
+                  <i class="tankeAuto material-icons">
+                      directions_car
+                  </i>
+                  <a class="modal-trigger editAuto" href="#modal1">
+                      <i class=" material-icons" id="edit">
+                          create
+                      </i>
+                  </a>
+                    <i class="deleteAuto material-icons">
+                        delete
+                    </i>
+
+              </td>
+          </tr>
+      {{/.}}
+  {{/data}}
+</script>
+

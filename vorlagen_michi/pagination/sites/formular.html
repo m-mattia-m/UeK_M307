@@ -1,0 +1,57 @@
+<!-- FORMULAR  - START -------------------------------- -->
+<form>
+    <!-- ZEILE ----------- -->
+    <div class="row">
+        <!-- SPALTE ----------- -->
+        <div class="input-field col l6 m6 s12">
+            <input required id="name" name="name" value="" type="text" class="validate" minlength="2" maxlength="255">
+            <label for="name">name *</label>
+        </div>
+        <!-- SPALTE ----------- -->
+        <div class="input-field col l6 m6 s12">
+            <input id="kraftstoff" name="kraftstoff" type="text" class="validate" minlength="2" maxlength="255">
+            <label for="kraftstoff">kraftstoff</label>
+        </div>
+    </div>
+    <!-- ZEILE ----------- -->
+    <div class="row">
+        <!-- SPALTE ----------- -->
+        <div class="input-field col l6 m6 s12">
+            farbe :
+            <input required id="farbe" name="farbe" value="#000000" type="color" class="validate" minlength="2" maxlength="255">
+
+        </div>
+        <!-- SPALTE ----------- -->
+        <div class="input-field col l6 m6 s12">
+            <select name="bauart" id="bauart">
+                <option value="Kleinwagen">Kleinwagen</option>
+                <option value="Sportwagen">Sportwagen</option>
+                <option value="SUV">SUV</option>
+              </select>              
+            <label for="kraftstoff">bauart</label>
+        </div>
+    </div>
+    <!-- ZEILE ----------- -->
+    <div class="row">
+        <!-- SPALTE ----------- -->
+        <div class="input-field col l3 m3 s3">
+            <input required id="tank" name="tank" value="0" type="number" class="validate" minlength="2" maxlength="255" min="0" max="1000">
+            <label for="tank">Tankfüllung</label>
+        </div>
+        <!---hidden ID-->
+        <input required id="id" type="hidden">
+
+    </div>
+
+    <div class="row">
+        <!-- SPALTE ----------- -->
+        <div class="input-field col l3 m3 s3">
+            <input id="date" type="date" class="datepicker">
+            <label for="tank"> Datum
+            </label>
+        </div>
+    </div>
+
+
+    <p>* = zwingend</p>
+</form> 

@@ -99,29 +99,29 @@ class auto{
 
         else{
             $write = true;
-            $name       = $_POST['name'];
-            if($write){
-                $write = $this->chkstr($name);
-            }
+            // $name       = $_POST['name'];
+            // if($write){
+            //     $write = $this->chkstr($name);
+            // }
 
-            if(isset($_POST['tank'])){
-                $tank = $_POST['tank'];
-            }else{
-                $tank = 0;
-            }
+            // if(isset($_POST['tank'])){
+            //     $tank = $_POST['tank'];
+            // }else{
+            //     $tank = 0;
+            // }
 
-            if($write){
-                $write = $this->chkint($tank);
-            }
+            // if($write){
+            //     $write = $this->chkint($tank);
+            // }
 
-            $kraftstoff = isset($_POST['kraftstoff']) ? $_POST['kraftstoff'] : '';
-            $bauart     = isset($_POST['bauart']) ? $_POST['bauart'] : '';
+            // $kraftstoff = isset($_POST['kraftstoff']) ? $_POST['kraftstoff'] : '';
+            // $bauart     = isset($_POST['bauart']) ? $_POST['bauart'] : '';
 
-            if(isset($_POST['color'])){
-                $farbe = $_POST['color'];
-            }else{
-                $farbe = "#000000";
-            }
+            // if(isset($_POST['color'])){
+            //     $farbe = $_POST['color'];
+            // }else{
+            //     $farbe = "#000000";
+            // }
             
             if($write){
                 // DB schreinben

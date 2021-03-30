@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Auto Webseite</title>
+
+
+        <!-- jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+        <!-----mustache-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js" integrity="sha512-HYiNpwSxYuji84SQbCU5m9kHEsRqwWypXgJMBtbRSumlx1iBB6QaxgEBZHSHEGM+fKyCX/3Kb5V5jeVXm0OglQ==" crossorigin="anonymous"></script>
+      
+        <!-- script js-->
+        <script type="text/javascript" src="./js/script.js"></script>
+
+        <!-- icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Cmaterialize css framework -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                
+        <!-- pagination js-->
+        <script type="text/javascript" src="./js/pagination.js"></script>
+
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!---favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+        <!---meta tags-->
+        <title>neue webseite m307</title>
+        <meta name="description" content="descirption">
+        <meta name="keywords" content="keywords keywords keywords">
+        <meta name="robots" content="index, follow">
+        <meta name="copyright" content="Michael Schädler">
+        <meta name="language" content="DE">
+        <meta name="generator" content="FreeMetaTagGenerator.com">
+    </head>
+    <body>
+
+        <!------------ navigation-------------->
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo">Logo</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">HOME</a></li>
+                <!--icon added to navigation-->
+              </ul>
+            </div>
+          </nav>
+         <!------------------------------>
+
+         <!--hier wird tabelle dargestellt-->
+         <div class="tabellen-inhalt"></div>
+
+          <!-- example email field
+         <div class=" input-field  l10 m6 s10">
+          <input type="email" id="email" name="email">
+          <label for="email">Enter your email:</label>
+         </div>
+         -------------------------------------->
+
+        <body>
+        <!-- Modal Trigger ----------------------------------------------------------->
+        <i id="newAuto" href="#modal1" class="right material-icons large red white-text round">add</i>
+        <!---------------------------------------------------->
+  
+        <!-- -------------------Modal Structure ----------------->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4 id="modalTitel"></h4>
+            <div id="modalInhalt"></div>
+          </div>
+          <div class="modal-footer">
+            <a href="#" id="Auto_save_or_edit" class="modal-close waves-effect waves-green btn-flat">Speichern</a>
+          </div>
+        </div>
+        <!---------------------------------------------------->
+
+
+    </div>
+ 
+    </body>
+</html>

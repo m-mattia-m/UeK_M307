@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Nunito Black";
+    src: url("../fonts/Nunito-Black.ttf") format("ttf")
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+
+  h1 {
+    font-family: 'Nunito', sans-serif;
+  }
+
+p{
+  color:red;
+}
+
+
+.addbtn{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  right: 50px;
+  top: 50px;
+}
+
+.color-prev {
+  height: 20px;
+  width: 60px;
+  margin-right: 5px;
+}
+
+.color-wrapper {
+  display: flex;
+}
+
+.round{
+  border-radius: 100px!important;
+}

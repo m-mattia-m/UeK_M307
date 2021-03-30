@@ -1,0 +1,152 @@
+  <!DOCTYPE html>
+  <html lang="de">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tag3</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <style>
+  
+      </style>
+  </head>
+  
+  <body>
+      <h1>Radio - Buttons</h1>
+  
+    
+      <form action="#">
+          <p>
+            <label>
+              <input value="herr" class="anrede radio1" name="anrede" type="radio" checked />
+              <span>Herr</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input value="frau" class="anrede" name="anrede" type="radio" />
+              <span>Frau</span>
+            </label>
+          </p>
+
+          <p>
+
+            <!---input-->
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate input1">
+              <label for="first_name">First Name</label>
+            </div>
+            <!------>
+
+            <!---textarea-->
+            <div class="input-field col s12">
+              <textarea class="textarea1 materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+            <!------>
+
+            <!---timepicker-->
+            <input type="timpicker" class="timepicker timepicker1">
+            <!------>
+
+            <!---checkbox-->
+            <label>
+              <input class="checkbox1" id="indeterminate-checkbox" type="checkbox" />
+              <span>checkbox test</span>
+            </label>
+            <!------>
+
+
+            <!---color picker-->
+            <div class="input-field col l6 m6 s12">
+              farbe :
+              <input id="farbe" name="farbe" value="#000000" type="color" class="validate colorpicker1" minlength="2" maxlength="255">
+            </div>
+            <!------>
+
+
+            <!---wenn name  anders dann beide auswählbar 
+          checked = default checked
+          
+          -->
+
+          <button id="einfuellen" class="btn green">automatisch einfüllen</button>
+          <button id="auslesen" class="btn red">schreiben</button>
+      
+        </form>
+      <script>
+          // Document Ready
+          $(function () {
+
+              //timepicker muss initialisiert werden
+              $('.timepicker').timepicker();
+
+              $('input:radio.anrede').each( function(){
+                  $(this).next().addClass('red-text');
+                  //das nexte element soll die klasse red-text bekommen
+              }
+
+              );
+              /***
+              * alle inputfelder
+              * vom typ radio
+              * mit der klasse anrede
+              * */ 
+
+              //einfuellen--------------------------------------------
+              $('#einfuellen').click(function (e) { 
+                  e.preventDefault();
+                
+                /*-----------textarea--------**/
+                $('.textarea1').val("Textarea test");
+                $('.radio1').prop('checked');
+
+                /*-----------input--------**/
+                $('.input1').val("input test");
+                
+                /*-----------timepicker--------**/
+                $('.timepicker1').val("08:10 AM");
+
+                $('.checkbox1').prop("checked",true); //checked ? wird mit true ersetzt
+
+                /*-----------radio--------**/
+                $("input:radio").each(function () {
+                if ($(this).val() == "frau") { //wenn value = frau
+                    $(this).attr('checked', 'checked');
+                }
+
+                /*-----------color-picker--------**/
+                $('.farbe1').val("#3b1212");
+            
+                 });
+
+              });
+              //------------------------------------------------------------------------------------------
+
+
+              //auslesen--------------------------------------------
+              $('#auslesen').click(function (e) { 
+                  e.preventDefault();
+                
+              /*-----------textarea--------**/
+              var radio = $('.radio1').val();
+              var textarea = $('.textarea1').val();
+              var input = $('.input1').val();
+              var timepicker = $('.timepicker1').val();
+              var colorpicker = $('.colorpicker1').val();
+
+              var checkbox = $('.checkbox1').val();
+                
+              console.log(radio + '   ' + textarea + '   ' + input + '   ' + timepicker + '   ' + checkbox + '   ' + colorpicker);
+
+              //------------------------------------------------------------------------------------------
+
+
+          });
+          })
+      </script>
+  </body>
+  
+  </html>
