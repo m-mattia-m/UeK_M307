@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "id" : "1",
+            "name" : "Urus",
+            "treibstoff" : "Diesel",
+            "farbe" : "#000000",
+            "bauart" : "SUV",
+            "tank" : "0"
+        },
+        {
+            "id" : "2",
+            "name" : "G Wagon",
+            "treibstoff" : "Benzin",
+            "farbe" : "#006666",
+            "bauart" : "Luxury SUV",
+            "tank" : "0" 
+        },
+        {
+            "id" : "3",
+            "name" : "Maybach",
+            "treibstoff" : "Diesel",
+            "farbe" : "#008888",
+            "bauart" : "Limusine",
+            "tank" : "0"
+        }
+    ]
+}
+

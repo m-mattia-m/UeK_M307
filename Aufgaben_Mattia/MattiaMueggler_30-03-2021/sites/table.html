@@ -1,0 +1,44 @@
+<div id="content">
+  <a class="modal-trigger add" href="#modal" id="fixedButton"><i class="material-icons tableHover add">add</i></a>
+</div>
+<table class="marginTop10 width75center light-grey highlight striped centered tablesorter data-table" id="carTable">
+    <thead class="bgColorDarkGrey colorWhite">
+      <tr>
+        <th data-field="Artikelbezeichnung">Artikelbezeichnung *</th>
+        <th data-field="Kategorie">Kategorie *</th>
+        <th data-field="Zustand">Zustand *</th>
+        <th data-field="Preis">Preis</th>
+        <th data-field="Bemerkungen">Bemerkungen</th>
+        <th data-field="timestamp" id="sortButton" class="sortInitialOrder-desc" data-sortinitialorder="desc" data-sort-initialorder="desc" data-sort-initial-order="desc">Timestamp</th>
+        <th data-field="action">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+<script id="template" type="x-tmpl-mustache">
+{{#data}}
+    {{#.}}
+      <tr>
+        <td>{{artikel_Artikelbezeichnung}}</td>
+        <td>{{artikel_Kategorie}}</td>
+        <td>{{artikel_Zustand}}</td>
+        <td>{{artikel_Preis}}</td>
+        <td>{{artikel_Bemerkungen}}</td>
+        <td>{{timestamp}}</td>
+        <td data-id={{id}}>
+
+        <a class="modal-trigger edit" href="#modal"><i class="material-icons tableHover green-text">edit</i></a>
+        <a class="modal-trigger delete" href="#delModal"><i class="material-icons tableHover red-text">delete</i></a>
+          
+        </td>
+      </tr>
+    {{/.}}
+{{/data}}
+
+</script>
+
+
+
