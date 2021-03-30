@@ -72,8 +72,13 @@ class auto{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // echo $limit;
         /* Überprüft ob ID != null */
+=======
+        echo $limit;
+
+>>>>>>> parent of 557e31e (Validation)
 =======
         echo $limit;
 
@@ -132,6 +137,7 @@ class auto{
         }
     }
     function POST(){
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -195,10 +201,37 @@ class auto{
                 $tank = 0;
             }
 >>>>>>> parent of 557e31e (Validation)
+=======
+        if(isset($_GET['id']) AND $_GET['id'] > 0){
+            $name       = $_POST['name'];
+            $kraftstoff = isset($_POST['kraftstoff']) ? $_POST['kraftstoff'] : '';
+            $farbe      = isset($_POST['color']) ? $_POST['color'] : '';
+            $bauart     = isset($_POST['bauart']) ? $_POST['bauart'] : '';
+            $tank       = isset($_POST['tank']) ? $_POST['tank'] : 0;
+            $id         = $_GET['id'];
+
+            $sql = "UPDATE " . DB_TABLE . " SET `betankungen`=$tank , `name`='$name', `kraftstoff`='$kraftstoff', `farbe`='$farbe', `bauart`='$bauart' WHERE `id`=$id";
+            echo $sql;
+            $this->conn->query($sql);
+        }
+
+        else{
+        
+            $name       = $_POST['name'];
+            $kraftstoff = isset($_POST['kraftstoff']) ? $_POST['kraftstoff'] : '';
+            $farbe      = isset($_POST['color']) ? $_POST['color'] : '';
+            $bauart     = isset($_POST['bauart']) ? $_POST['bauart'] : '';
+            if(isset($_POST['tank'])){
+                $tank = $_POST['tank'];
+            }else{
+                $tank = 0;
+            }
+>>>>>>> parent of 557e31e (Validation)
             
             $sql = "INSERT INTO " . DB_TABLE . " (`name`, `kraftstoff`, `farbe`, `bauart`, `betankungen`) VALUES ('$name', '$kraftstoff', '$farbe', '$bauart', $tank)";
             $this->conn->query($sql);
         
+<<<<<<< HEAD
 <<<<<<< HEAD
             }
 =======
@@ -266,6 +299,10 @@ class auto{
             $sql = "INSERT INTO " . DB_TABLE . " (`name`, `kraftstoff`, `farbe`, `bauart`, `betankungen`) VALUES ('$name', '$kraftstoff', '$farbe', '$bauart', $tank)";
             $this->conn->query($sql);
         
+        }
+        
+>>>>>>> parent of 557e31e (Validation)
+=======
         }
         
 >>>>>>> parent of 557e31e (Validation)
