@@ -1,8 +1,9 @@
 $('.modal').modal();
 
-$('data-table').data('limit', 10); // set default table limit
+// $('data-table').data('limit', 10); // set default table limit
 
-var limit = 0;
+// wenn 0 werden alle Daten ausgelesen -> Default limit
+var limit = 10;
 
 // sort buttons (has to do with limiting the table)
 $('button.sort').click(function (e) {
@@ -42,7 +43,8 @@ function getData() {
 
     $.ajax({
         type: "GET",
-        url: "data/api.php?limit=" + limit,
+        // url: "data/api.php?limit=" + limit,
+        url: "data/api.php?limit=0",
         dataType: "JSON",
         success: function (response) {
             var template = $('#template').html();
@@ -58,17 +60,19 @@ function getData() {
                 }
             }
 
-            $("table.data-table").trigger('update'); // tablesorter trigger update
-
-            $('#ul-pagination').html(''); // reset the existing pagination
-            $('#table-body').pageMe({
+            /* Table sorter trigger Update */
+            $("table.data-table").trigger('update');
+            
+            /* Pagination */
+            $('#ul-pagination').html('');
+            $('#carTable').pageMe({
                 pagerSelector: '#ul-pagination',
-                activeColor: 'grey darken-3',
-                prevText: 'Previous',
-                nextText: 'Next',
+                activeColor: 'blue',
+                prevText: 'prev',
+                nextText: 'next',
                 showPrevNext: true,
                 hidePageNumbers: false,
-                perPage: Number($('data-table').data('limit'))
+                perPage: limit,
             });
 
             $('.delete').click(function (e) {
@@ -103,3 +107,15 @@ function getData() {
         }
     });
 }
+
+
+// $('#ul-pagination').html('');
+// $('#carTable').pageMe({
+//     pagerSelector: '#ul-pagination',
+//     activeColor: 'blue',
+//     prevText: 'prev',
+//     nextText: 'next',
+//     showPrevNext: true,
+//     hidePageNumbers: false,
+//     perPage: 5
+// });

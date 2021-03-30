@@ -77,7 +77,7 @@ class auto{
 
         $limit = $_GET['limit'];
         
-        echo $limit;
+        // echo $limit;
         /* Überprüft ob ID != null */
         if (isset($_GET['id']) && !empty($_GET['id'])) {
             $sql = "SELECT * FROM " . DB_TABLE . " WHERE id =" . $_GET['id'] . ";";
@@ -174,10 +174,8 @@ class auto{
         
             }
         }else {
-            echo "Ihre Eingabe ist falsch!"
+            echo "Ihre Eingabe ist falsch!";
         }
-
-
 
         
     }
